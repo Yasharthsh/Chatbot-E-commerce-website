@@ -5,6 +5,7 @@ from nltk.corpus import stopwords
 from difflib import SequenceMatcher as SM
 df = pd.read_csv(r'C:\Users\Yasharth\Desktop\cluster.csv')
 df2 = pd.read_csv(r'C:\Users\Yasharth\Desktop\dataset.csv')
+#creating dictionaries for one to one classification 
 df1 = df2.set_index('names')
 dict1 = df1.to_dict()['class']
 dict2 = df1.to_dict()['brand_id']
@@ -14,6 +15,7 @@ probrand = df1.to_dict()['brand']
 prosubcat = df1.to_dict()['subcat']
 procat = df1.to_dict()['cat']
 query = input("enter your query here")
+#following procedure is for data cleaning
 sr = stopwords.words('english')
 counter=0
 updatestring = nltk.tag.pos_tag(query.split())
@@ -32,6 +34,7 @@ finaloutput=[]
 finaloutput2=[]
 twobrands=[]
 twoproducts=[]
+#now we apply similarity algorithm for syntax correction
 for i in clean_tokens:
     for j in dict1:
         s1 = str(i)
@@ -41,6 +44,7 @@ for i in clean_tokens:
             output.append(dict1[j])
             finaltokens.append(j)
 counter1=0
+#now we check for category->subcategory->brand->product sequentially and cluster items accordingly
 for i,v in enumerate(output):
     if v=='sub_category':
         counter1+=1
