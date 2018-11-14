@@ -1,0 +1,38 @@
+names,class,brand_id,category,sub_category
+samsung,brand,1,,
+sony,brand,2,,
+panasonic,brand,3,,
+lenovo,brand,4,,
+dell,brand,5,,
+asus,brand,6,,
+micromax,brand,7,,
+apple,brand,8,,
+vivo,brand,9,,
+hp,brand,10,,
+galaxys9,product,1,electronics,phones
+galaxyj7,product,1,electronics,phones
+iphone X,product,8,electronics,phones
+iphone 7,product,8,electronics,phones
+inspiron,product,5,electronics,laptop
+ideapad,product,4,electronics,laptop
+M450,product,7,electronics,phones
+phone,sub_category,,,
+laptop,sub_category,,,
+television,sub_category,,,
+xperia Zultra,product,2,electronics,phones
+xperia Z1,product,2,electronics,phones
+xperia c,product,2,electronics,phones
+panasonic C10,product,3,electronics,phones
+lenovo M12,product,4,electronics,phones
+alienware,product,5,electronics,laptop
+zenfone,product,6,electronics,phones
+canvas,product,7,electronics,phones
+Vivo V5s,product,9,electronics,phones
+vivo Vultra,product,9,electronics,phones
+pavillion,product,10,electronics,laptop
+omen,product,10,electronics,laptop
+hcl,brand,20,,
+me,product,20,electronics,laptop
+macbook,product,8,electronics,laptop
+chromebook,product,1,electronics,laptop
+bravia,product,2,electronics,television
